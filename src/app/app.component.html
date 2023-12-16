@@ -1,0 +1,25 @@
+<h3 style="text-align: center;letter-spacing: 2PX;background-color: black;color:#ffff;">{{heading}}</h3>
+<img alt="item" style="width: 25.0rem;height: 25.0rem;margin-left: 570px;margin-top: 20px;" [src]="itemImageUrl">
+<h3 style="text-align: center;letter-spacing: 2PX;background-color: black;color:#ffff;margin-top: 40px;">TWO WAY BINDING</h3>
+<h6 style="margin-left: 570px;" >Write any input words</h6>
+<input style="margin-left: 570px;width: 500px;" type="text" placeholder="type here..." [(ngModel)]="data">
+<h4 style="margin-left: 570px;" >Real Time Data : {{data}}</h4>
+<div class="container">
+    <div class="col-lg-12" id="pd">
+        <h1>Property binding</h1>
+        <input type="text" name="username" value="{{data1}}" disabled="{{disable}}">
+        <br>
+        <br>
+        <br>
+        <input type="text" name="username" [value]=data1 [disabled]=disable>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12" id="pd1">
+            <h1>Property binding</h1>
+            <input type="text" name="username" [value]=data1 [disabled]=disable>
+            <button type="button" id="buttonEnable" class="btn btn-primary" (click)="enableBox()">enable text box</button>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
