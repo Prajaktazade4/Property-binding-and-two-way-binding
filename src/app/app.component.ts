@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'taskTen';
   heading='PROPERTY BINDING'
-  itemImageUrl = 'assets/tshirt.avif';
+  itemImageUrl = 'tshirt.avif';
   data:any;
   data1:string='this is AnkHub'
   disable=true;
